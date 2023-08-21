@@ -1,0 +1,303 @@
+body {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: grey;
+    background-image: url(https://images.pexels.com/photos/3377405/pexels-photo-3377405.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  /* navbar */
+  .navbar-nav {
+    margin-left: auto;
+    display: flex;
+    align-items:end;
+    font-size: large;
+  }
+  .navbar-nav .nav-item {
+    margin-right: 15px; 
+    margin-left: 15px;
+  }
+  .navbar-brand{
+    color:wheat ;
+  }
+  .nav-link {
+    transition: color 0.3s;
+    color: wheat;
+    text-decoration:underline;
+  }
+  .nav-link:hover {
+    color: rgb(26, 168, 194); 
+  }
+  .navbar-right {
+    margin-left: auto;
+  }
+  .navbar-left {
+    margin-right: auto;
+  }
+  /* login/register component */
+  .login-register-button {
+    margin-right:2px;
+    background-color: transparent;
+    color:wheat;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s, border 0.3s;
+  }
+  .login-register-button:hover {
+    color: rgb(198, 10, 227);
+    border-radius: 4px;
+  }
+  /* carousel images */
+  .carousel-section {
+    position: relative;
+  }
+  .carousel-image {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding: auto;
+  }
+  .carousel-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .carousel-image-content {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color:wheat;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6); 
+  }
+  .carousel-image h1 {
+    position: absolute;
+    top: 80px; 
+    left: 10px; 
+    color:rgb(231, 153, 9);
+    padding: 10px;
+    font-size: 40px;
+  }
+  .carousel-image p {
+    position: absolute;
+    color: white;
+    top: 150px; 
+    left: 10px; 
+    width: 800px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+  }
+  /* Know more button */
+  .know-more-button {
+    position: absolute;
+    top: 340px; 
+    left: 330px; 
+    background-color: rgb(110, 110, 197);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .know-more-button:hover {
+    background-color: white;
+    color: blue;
+  }
+  /* About component */
+  .about-content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  .about-text {
+    flex: 1;
+    padding-right: 20px; 
+  }
+  .about-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .about-content p {
+    font-size: 18px;
+  }
+  .about-content {
+    display: flex;
+    align-items: center;
+  }
+  .about-content {
+    display: flex;
+    align-items: center;
+    padding: 10px; 
+  }
+  .about-text {
+    flex: 1;
+    padding-right: 20px; 
+  }
+  .about-image.right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .about-image img {
+    max-width:90%; 
+    max-height: 100vh; 
+    margin-right: 50px;
+  }
+  .about-image.right:hover img {
+    transform: scale(1.1); 
+    cursor: pointer;
+  }
+  /* services component */
+  .services-section {
+    text-align: center;
+    font-size: larger;
+  }
+  .service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .service {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 10px); 
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  .service-image {
+    width:100%;
+    height: auto;
+    align-self: flex-end;
+    top: 20px;
+    margin-bottom: 10px;
+  }
+  .service-image:hover{
+    transform: scale(1.1);
+  }
+  .service-content {
+    flex: 1;
+    text-align: left;
+    top:100px
+  }
+  .service-content h3 {
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    margin-bottom: 40px;
+  }
+  /* contact us component */
+  .contact-section{
+    padding: 10px 20px;
+    font-size: 18px;
+    background-image: none;
+  }
+  .contact-section h2{
+    text-align: center;
+  }
+  
+  .contact-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  .contact-details h3{
+    color: rgb(11, 11, 105);
+    text-decoration:underline;
+  }
+  .contact-info1{
+    flex: 1;
+    margin-right: 2px;
+  }
+  .contact-info2{
+    flex: 1;
+    margin-right: 2px;
+  }
+  .contact-form h3{
+    color: rgb(11, 11, 105);
+    text-decoration:underline;
+  }
+  .contact-form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 40%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .contact-form button {
+    display: block; 
+    margin-top: 10px; 
+  }
+  .contact-form button:hover{
+    transform: scale(1.1);
+    color: blue;
+    width: 30px;
+  }
+  /* login component */
+  .login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    align-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .login-form h2 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .login-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  .login-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .login-form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .login-form button {
+    padding: 8px 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .login-form button:hover {
+    background-color: #0056b3;
+  }
+  .login-form p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .login-form button.toggle-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .login-form button.toggle-button:hover {
+    text-decoration: underline;
+  }
+  

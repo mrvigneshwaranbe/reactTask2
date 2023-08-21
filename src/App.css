@@ -1,0 +1,40 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+  overflow: auto;
+	font-family: "Titillium Web", sans-serif;
+  font-size: 120%;
+}
+
+:root {
+	--mainColor: #011439;
+	--mainColorLight: #0e39e2;
+	--secondaryColor: #8f17df;
+	--textColor: #eee;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 120px;
+	padding: 0 3rem;
+	background-color: var(--mainColor);
+	color: var(--textColor);
+  
+}
+
+nav a {
+	margin: 0 2rem;
+	color: var(--textColor);
+	text-decoration: none;
+  
+}
+
+nav a:hover {
+	color: var(--secondaryColor);
+}
+.log{
+  font-size: 150%;
+}
